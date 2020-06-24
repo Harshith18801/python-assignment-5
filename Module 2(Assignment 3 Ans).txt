@@ -1,0 +1,69 @@
+
+
+                                  Module 3
+                               
+                             Python Assignment
+                                                      
+                                                        Harshith N
+                                                        321910302056
+
+
+1.   Write a python program to find area of circle using math function.
+Ans: import math
+     r = float(input("Enter the radius of the circle: "))
+     area = math.pi* r * r
+     print("%.2f" %area)
+
+2.   Write a program to find area of regular polygon.
+Ans: from math import tan, pi
+     n_sides = int(input("Input number of sides: "))
+     s_length = float(input("Input the length of a side: "))
+     p_area = n_sides * (s_length ** 2) / (4 * tan(pi / n_sides))
+     print("The area of the polygon is: ",p_area)
+
+3.   Write a program to generate random numbers between 1 and 1000.
+Ans: import random
+
+     print(random.randint(1,1000))
+
+4.   Write a python program by using math module to find
+      * sin60
+      * cos(pi)
+      * tan90
+      * 5^8
+      * squareroot 400
+      * floor and ceiling value of 23.56
+Ans: * from math import sin
+
+       sine_60 = sin(60)
+ 
+       print ("The sine of 60 = ",  sine_60)
+
+     * import math 
+	
+       a = math.pi / 6
+	
+       print ("The value of cosine of pi / 6 is : ", end ="") 
+       print (math.cos(pi))
+
+     * import math
+
+       Radians90       = math.radians(90)
+
+       tan90           = math.tan(Radians90)
+
+       tan90Rounded    = round(tan90,2)
+
+       print("tan 90:{}".format(tan90Rounded))
+
+     * print ("The value of 5**8 is : ",end="") 
+
+       print (pow(5,8))
+
+     * num = 400
+
+       num_sqrt = num ** 0.5
+       print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+
+     * import math
+       print('The Floor and Ceiling value of 23.56 are: ' + str(math.ceil(23.56)) + ', ' + str(math.floor(23.56)))
